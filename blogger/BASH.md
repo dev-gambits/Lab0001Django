@@ -17,6 +17,11 @@ venv\Scripts\activate
 pip install django
 ```
 
+#### Paso 3: Instalar Django
+```bash
+python manage.py runserver 9000
+```
+
 #### Paso 4: Crear proyecto
 ```bash
 django-admin startproject web
@@ -28,6 +33,8 @@ django-admin startproject web
 python manage.py startapp blog
 python manage.py startapp nosotros
 python manage.py startapp contacto
+python manage.py startapp servicios
+python manage.py startapp productos
 ```
 
 #### Paso 6: Agregar las aplicaciones a `settings.py`
@@ -258,3 +265,11 @@ pip freeze > requirements.txt
 ```
 
 Sigue estos pasos para configurar tu proyecto y desarrollar un sitio web funcional utilizando Django. Si tienes alguna pregunta, ¡no dudes en preguntar!
+
+
+```bash
+cd templates &&
+mkdir contacto servicios productos nosotros login security &&
+touch base.html index.html contacto.html servicios.html nosotros.html login.html portafolio.html blog.html &&
+cd ..
+```
